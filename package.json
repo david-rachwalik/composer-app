@@ -1,5 +1,5 @@
 {
-  "name": "enterprise-composer-app",
+  "name": "composer-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

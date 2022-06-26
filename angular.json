@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "enterprise-composer-app": {
+    "composer-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/enterprise-composer-app",
+            "outputPath": "dist/composer-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "enterprise-composer-app:build"
+            "browserTarget": "composer-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "enterprise-composer-app:build:production"
+              "browserTarget": "composer-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "enterprise-composer-app:build"
+            "browserTarget": "composer-app:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "enterprise-composer-app:serve"
+            "devServerTarget": "composer-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "enterprise-composer-app:serve:production"
+              "devServerTarget": "composer-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "enterprise-composer-app"
+  "defaultProject": "composer-app"
 }
